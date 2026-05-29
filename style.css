@@ -1295,40 +1295,47 @@ body {
   100% { transform: translateX(0px); }          /* Phir apni jagah */
 }
 
-/* Sirf Mobile Pe Home Page Ka Hero Section Theek Karo */
+
+
+/* ===== MOBILE HOME PAGE FIX - FINAL ===== */
 @media only screen and (max-width: 768px) {
   
-  /* 1. Body ka side gap khatam */
-  body, html { 
-    overflow-x: hidden !important; 
+  /* 1. Side ka gap khatam + horizontal scroll band */
+  html, body {
+    overflow-x: hidden !important;
     width: 100% !important;
+    max-width: 100% !important;
   }
   
-  /* 2. Hero section ke andar wale faltu badges hide karo */
-  .hero-section .badge,
-  .hero .badge,
-  .hero [class*="float"],
-  .hero [class*="tech"],
-  .hero [class*="label"],
-  .hero-section [style*="position: absolute"],
-  .hero [style*="position: absolute"] {
+  /* 2. Hero ke saare udte hue badges gayab karo */
+  .float-skill {
     display: none !important;
   }
   
-  /* 3. Hero ki image ko center me set karo */
-  .hero img,
-  .hero-section img {
-    position: static !important;
-    width: 90% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    display: block !important;
+  /* 3. Niche wala "DayDevlop Web Developer" tag gayab karo mobile pe */
+  .logo-badge {
+    display: none !important;
   }
   
-  /* 4. Services ke cards 1 ke neeche 1 */
-  .services,
-  .services-grid,
-  .service-cards {
+  /* 4. Laptop ki image ko center me set karo */
+  .showcase-wrap {
+    padding: 0 16px !important;
+  }
+  
+  .laptop-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    position: static !important;
+  }
+  
+  /* 5. Hero ka text andar lao */
+  .hero-left {
+    padding: 0 16px !important;
+  }
+  
+  /* 6. Services 1 ke neeche 1 */
+  .services-grid {
     grid-template-columns: 1fr !important;
   }
 }
