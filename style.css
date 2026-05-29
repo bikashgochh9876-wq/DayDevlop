@@ -1294,3 +1294,27 @@ body {
   75% { transform: translateX(12px); }          /* Right jayega */
   100% { transform: translateX(0px); }          /* Phir apni jagah */
 }
+/* Mobile pe desktop wale badges hide karo */
+@media only screen and (max-width: 768px) {
+  /* Side ka gap khatam */
+  body { overflow-x: hidden; }
+  
+  /* Idhar-udhar wale badges gayab */
+  .hero .badge, 
+  .hero .float, 
+  .hero [class*="tech-"],
+  .hero [style*="position: absolute"] {
+    display: none !important;
+  }
+  
+  /* Laptop image center me */
+  .hero img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Services 1 ke neeche 1 */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
