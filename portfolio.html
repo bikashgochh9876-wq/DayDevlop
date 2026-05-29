@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - DayDevlop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <img src="Images/logo.png" alt="DayDevlop">
+        <h1>DayDevlop</h1>
+      </div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="https://wa.me/917077134418?text=Hi%20DayDevlop%2C%20I%20want%20to%20start%20a%20project" class="btn-primary btn-small btn-animated" target="_blank">Start Project <i class="fa-solid fa-arrow-right"></i></a>
+      <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Portfolio Hero -->
+  <section class="hero" style="padding: 120px 0 60px;">
+    <div class="container">
+      <div class="section-head">
+        <div class="badge-top">
+          <i class="fa-solid fa-briefcase"></i> Our Work
+        </div>
+        <h3>Sample <span class="gradient-text">Projects</span></h3>
+        <p>Real websites built with clean code. All projects include full source code and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Filter -->
+  <section class="services light-section" style="padding: 40px 0;">
+    <div class="container">
+      <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 40px;">
+        <button class="btn-primary btn-small filter-btn active" data-filter="all">All Projects</button>
+        <button class="btn-secondary btn-small filter-btn" data-filter="business">Business</button>
+        <button class="btn-secondary btn-small filter-btn" data-filter="portfolio">Portfolio</button>
+        <button class="btn-secondary btn-small filter-btn" data-filter="ecommerce">E-commerce</button>
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="services-grid" id="portfolioGrid">
+        
+        <!-- 1. Product Landing -->
+        <div class="service-card portfolio-item" data-category="ecommerce">
+          <img src="Images/product.png" alt="Product Landing Page" style="width: 100%; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border);">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span style="font-size: 11px; padding: 4px 10px; background: rgba(6, 182, 212, 0.1); color: var(--primary); border-radius: 6px; font-weight: 600;">E-commerce</span>
+            <span style="font-size: 11px; padding: 4px 10px; background: var(--light); color: var(--gray); border-radius: 6px;">Landing</span>
+          </div>
+          <h4>Product Landing Page</h4>
+          <p style="font-size: 14px; color: var(--gray); margin-bottom: 15px;">High-converting product page with features, pricing, and buy now sections.</p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/917077134418?text=Hi%20I%20want%20Product%20Landing%20like%20this" target="_blank" style="flex: 1; text-align: center; padding: 10px; background: var(--primary); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 600;">Get Similar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 2. Coaching Website -->
+        <div class="service-card portfolio-item" data-category="business">
+          <img src="Images/coaching.png" alt="Coaching Website" style="width: 100%; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border);">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span style="font-size: 11px; padding: 4px 10px; background: rgba(6, 182, 212, 0.1); color: var(--primary); border-radius: 6px; font-weight: 600;">Business</span>
+            <span style="font-size: 11px; padding: 4px 10px; background: var(--light); color: var(--gray); border-radius: 6px;">Landing</span>
+          </div>
+          <h4>Online Coaching</h4>
+          <p style="font-size: 14px; color: var(--gray); margin-bottom: 15px;">Coaching landing page with course modules, pricing, and enrollment CTA.</p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/917077134418?text=Hi%20I%20want%20Coaching%20Website%20like%20this" target="_blank" style="flex: 1; text-align: center; padding: 10px; background: var(--primary); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 600;">Get Similar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 3. Corporate Business -->
+        <div class="service-card portfolio-item" data-category="business">
+          <img src="Images/corporate.png" alt="Corporate Website" style="width: 100%; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border);">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span style="font-size: 11px; padding: 4px 10px; background: rgba(6, 182, 212, 0.1); color: var(--primary); border-radius: 6px; font-weight: 600;">Business</span>
+            <span style="font-size: 11px; padding: 4px 10px; background: var(--light); color: var(--gray); border-radius: 6px;">5 Pages</span>
+          </div>
+          <h4>Corporate Business</h4>
+          <p style="font-size: 14px; color: var(--gray); margin-bottom: 15px;">Clean corporate website with services, about, team, and contact pages.</p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/917077134418?text=Hi%20I%20want%20Corporate%20website%20like%20this" target="_blank" style="flex: 1; text-align: center; padding: 10px; background: var(--primary); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 600;">Get Similar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 4. Restaurant Website -->
+        <div class="service-card portfolio-item" data-category="business">
+          <img src="Images/restaurant.png" alt="Restaurant Website" style="width: 100%; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border);">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span style="font-size: 11px; padding: 4px 10px; background: rgba(6, 182, 212, 0.1); color: var(--primary); border-radius: 6px; font-weight: 600;">Business</span>
+            <span style="font-size: 11px; padding: 4px 10px; background: var(--light); color: var(--gray); border-radius: 6px;">5 Pages</span>
+          </div>
+          <h4>Restaurant Website</h4>
+          <p style="font-size: 14px; color: var(--gray); margin-bottom: 15px;">Elegant restaurant site with menu, gallery, chef profile, and booking form.</p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/917077134418?text=Hi%20I%20want%20Restaurant%20website%20like%20this" target="_blank" style="flex: 1; text-align: center; padding: 10px; background: var(--primary); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 600;">Get Similar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- 5. Developer Portfolio -->
+        <div class="service-card portfolio-item" data-category="portfolio">
+          <img src="Images/developer.png" alt="Developer Portfolio" style="width: 100%; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border);">
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span style="font-size: 11px; padding: 4px 10px; background: rgba(6, 182, 212, 0.1); color: var(--primary); border-radius: 6px; font-weight: 600;">Portfolio</span>
+            <span style="font-size: 11px; padding: 4px 10px; background: var(--light); color: var(--gray); border-radius: 6px;">Single Page</span>
+          </div>
+          <h4>Developer Portfolio</h4>
+          <p style="font-size: 14px; color: var(--gray); margin-bottom: 15px;">Modern dark theme portfolio for developers with projects and skills showcase.</p>
+          <div style="display: flex; gap: 10px;">
+            <a href="https://wa.me/917077134418?text=Hi%20I%20want%20Developer%20Portfolio%20like%20this" target="_blank" style="flex: 1; text-align: center; padding: 10px; background: var(--primary); color: #fff; border-radius: 8px; font-size: 13px; font-weight: 600;">Get Similar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" style="padding: 60px 0;">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-left">
+          <h3>Like What You <span class="gradient-text">See?</span></h3>
+          <p>Get a similar website for your business. All projects delivered in 3-10 days with full source code.</p>
+          <div class="cta-btns">
+            <a href="https://wa.me/917077134418?text=Hi%20DayDevlop%2C%20I%20saw%20your%20portfolio%20and%20want%20a%20website" class="btn-primary btn-animated" target="_blank">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="pricing.html" class="btn-secondary btn-animated">View Pricing <i class="fa-solid fa-tag"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="Images/logo.png" alt="DayDevlop">
+            <h3>DayDevlop</h3>
+          </div>
+          <p>Professional web development services. Fast, responsive, and affordable static websites with source code included.</p>
+          <div class="footer-socials">
+    <a href="https://www.instagram.com/daydevlop?igsh=MXQxejdncHQyd3h6dA=" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/techtory.09" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://x.com/DayDevlop" target="_blank"><i class="fab fa-x-twitter"></i></a>
+    <a href="https://youtube.com/@daydevlop?si=YmVyVssYXaMxvQwR" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Static Websites</a></li>
+            <li><a href="services.html">Landing Pages</a></li>
+            <li><a href="services.html">Single Page Sites</a></li>
+            <li><a href="services.html">Portfolio Sites</a></li>
+            <li><a href="services.html">Business Websites</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://wa.me/917077134418" target="_blank">WhatsApp Support</a></li>
+            <li><a href="mailto:contact@DayDevlop.com">Email Support</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 DayDevlop. All Rights Reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart" style="color: #ef4444;"></i> in India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/917077134418?text=Hi%20I%20want%20to%20discuss%20website" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
