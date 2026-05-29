@@ -1294,27 +1294,41 @@ body {
   75% { transform: translateX(12px); }          /* Right jayega */
   100% { transform: translateX(0px); }          /* Phir apni jagah */
 }
-/* Mobile pe desktop wale badges hide karo */
+
+/* Sirf Mobile Pe Home Page Ka Hero Section Theek Karo */
 @media only screen and (max-width: 768px) {
-  /* Side ka gap khatam */
-  body { overflow-x: hidden; }
   
-  /* Idhar-udhar wale badges gayab */
-  .hero .badge, 
-  .hero .float, 
-  .hero [class*="tech-"],
+  /* 1. Body ka side gap khatam */
+  body, html { 
+    overflow-x: hidden !important; 
+    width: 100% !important;
+  }
+  
+  /* 2. Hero section ke andar wale faltu badges hide karo */
+  .hero-section .badge,
+  .hero .badge,
+  .hero [class*="float"],
+  .hero [class*="tech"],
+  .hero [class*="label"],
+  .hero-section [style*="position: absolute"],
   .hero [style*="position: absolute"] {
     display: none !important;
   }
   
-  /* Laptop image center me */
-  .hero img {
-    width: 100% !important;
+  /* 3. Hero ki image ko center me set karo */
+  .hero img,
+  .hero-section img {
+    position: static !important;
+    width: 90% !important;
     height: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
   
-  /* Services 1 ke neeche 1 */
-  .services-grid {
+  /* 4. Services ke cards 1 ke neeche 1 */
+  .services,
+  .services-grid,
+  .service-cards {
     grid-template-columns: 1fr !important;
   }
 }
