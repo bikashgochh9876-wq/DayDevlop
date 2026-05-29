@@ -1295,44 +1295,122 @@ body {
   100% { transform: translateX(0px); }          /* Phir apni jagah */
 }
 
+/* ===== DESKTOP HEADER BADA KARO ===== */
+.header-content {
+  padding: 18px 0 !important; /* Pehle 12px tha */
+}
 
+.logo img {
+  width: 44px !important; /* Pehle 36px tha */
+  height: 44px !important;
+}
 
-/* ===== MOBILE HOME PAGE FIX - FINAL ===== */
+.logo h1 {
+  font-size: 24px !important; /* Pehle 20px tha */
+}
+
+/* ===== MOBILE FIX - PHOTO EXACT ===== */
 @media only screen and (max-width: 768px) {
   
-  /* 1. Side ka gap khatam + horizontal scroll band */
+  /* 1. Header + Logo chipakna band */
+  .header-content {
+    padding: 14px 20px !important;
+  }
+  
+  .container {
+    padding: 0 20px !important;
+  }
+  
+  .logo img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+  
+  .logo h1 {
+    font-size: 20px !important;
+  }
+  
+  /* 2. Side ka white gap khatam */
   html, body {
     overflow-x: hidden !important;
     width: 100% !important;
-    max-width: 100% !important;
   }
   
-  /* 2. Hero ke saare udte hue badges gayab karo */
-  .float-skill {
-    display: none !important;
+  /* 3. Hero section */
+  .hero {
+    padding: 100px 0 40px !important;
   }
   
-  /* 3. Niche wala "DayDevlop Web Developer" tag gayab karo mobile pe */
-  .logo-badge {
-    display: none !important;
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
   }
   
-  /* 4. Laptop ki image ko center me set karo */
+  .hero-left {
+    padding: 0 !important;
+  }
+  
+  .hero-left h2 {
+    font-size: 30px !important;
+  }
+  
+  /* 4. Laptop + Badges EXACT PHOTO JAISE */
   .showcase-wrap {
-    padding: 0 16px !important;
+    position: relative !important;
+    padding: 10px 0 !important;
   }
   
   .laptop-img {
-    width: 100% !important;
-    max-width: 100% !important;
+    width: 88% !important;
+    max-width: 330px !important;
     height: auto !important;
-    position: static !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
   
-  /* 5. Hero ka text andar lao */
-  .hero-left {
-    padding: 0 16px !important;
+  .float-skill {
+    display: flex !important;
+    position: absolute !important;
+    font-size: 10px !important;
+    padding: 6px 10px !important;
+    border-radius: 8px !important;
+    gap: 5px !important;
+    background: #fff !important;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12) !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
   }
+  
+  .float-skill i {
+    font-size: 14px !important;
+  }
+  
+  /* Positions - Screenshot jaisi */
+  .skill-1 { top: 2% !important; left: 4% !important; }
+  .skill-2 { top: 8% !important; right: 2% !important; }
+  .skill-3 { top: 30% !important; left: -1% !important; }
+  .skill-4 { top: 36% !important; right: -1% !important; }
+  .skill-5 { bottom: 40% !important; left: 3% !important; }
+  .skill-6 { bottom: 30% !important; right: 4% !important; }
+  .skill-7 { bottom: 12% !important; left: 12% !important; }
+  .skill-8 { top: 20% !important; left: 47% !important; }
+  
+  /* 5. DayDevlop tag */
+  .logo-badge {
+    position: absolute !important;
+    bottom: -10% !important;
+    right: 6% !important;
+    padding: 9px 13px !important;
+    transform: scale(0.88) !important;
+  }
+  
+  .logo-badge img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .logo-badge b { font-size: 12px !important; }
+  .logo-badge p { font-size: 10px !important; }
   
   /* 6. Services 1 ke neeche 1 */
   .services-grid {
