@@ -181,7 +181,7 @@ if (contactForm) {
       return;
     }
     
-    const whatsappMsg = `Hi TDEV,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AProject: ${encodeURIComponent(projectType)}%0A%0AMessage: ${encodeURIComponent(message)}`;
+    const whatsappMsg = `Hi DayDevlop,%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AProject: ${encodeURIComponent(projectType)}%0A%0AMessage: ${encodeURIComponent(message)}`;
     
     window.open(`https://wa.me/917077134418?text=${whatsappMsg}`, '_blank');
     contactForm.reset();
@@ -250,7 +250,7 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-console.log('TDEV website loaded successfully');
+console.log('DayDevlop website loaded successfully');
 
 // Portfolio Filter
 const filterBtns = document.querySelectorAll('.filter-btn');
@@ -277,4 +277,22 @@ filterBtns.forEach(btn => {
       }
     });
   });
+});
+
+// Header Hide On Scroll
+let lastScrollTop = 0;
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', function() {
+  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (currentScroll > lastScrollTop && currentScroll > 100) {
+    // Niche ja rahe hai - header hide karo
+    header.classList.add('hide');
+  } else {
+    // Upar ja rahe hai - header show karo
+    header.classList.remove('hide');
+  }
+  
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
